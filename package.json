@@ -12,6 +12,9 @@
         "template"
     ],
     "homepage": "https://startbootstrap.com/template-overviews/resume",
+    "scripts": {
+        "start": "node server/index.js"
+    },
     "bugs": {
         "url": "https://github.com/BlackrockDigital/startbootstrap-resume/issues",
         "email": "feedback@startbootstrap.com"
