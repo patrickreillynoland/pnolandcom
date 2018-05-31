@@ -1,5 +1,6 @@
 const path = require('path');
 const express = require ('express');
+const nodemon = require ('gulp-nodemon');
 
 const clientPath = path.join(__dirname, '..');
 

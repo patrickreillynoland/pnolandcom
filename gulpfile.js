@@ -6,6 +6,7 @@ var rename = require("gulp-rename");
 var uglify = require('gulp-uglify');
 var pkg = require('./package.json');
 var browserSync = require('browser-sync').create();
+var nodemon = require('gulp-nodemon');
 
 // Set the banner content
 var banner = ['/*!\n',
@@ -129,6 +130,25 @@ gulp.task('browserSync', function() {
     }
   });
 });
+
+// Just launch Nodemon @ 3000
+gulp.task('nodemon', function(rs) {
+
+  var started = false;
+
+  return nodemon({
+    script: "./server/index.js"
+  })
+    .on('start', function() {
+      if (!started) {
+        rs();
+        started = true;
+      }
+    })
+});
+
+// Rebuild + Launch Nodemon
+gulp.task('reboot', ['css', 'js', 'nodemon']);
 
 // Dev task
 gulp.task('dev', ['css', 'js', 'browserSync'], function() {
