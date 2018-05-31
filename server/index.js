@@ -2,9 +2,9 @@ const path = require('path');
 const express = require ('express');
 const secure = require('ssl-express-www');
 
-var clientPath = path.join(__dirname, '..');
+const clientPath = path.join(__dirname, '..');
 
-var app = express();
+const app = express();
 
 app
     .use(secure)
