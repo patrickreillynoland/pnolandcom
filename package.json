@@ -34,7 +34,8 @@
         "ejs": "^2.6.1",
         "express": "^4.16.3",
         "jquery": "3.3.1",
-        "simple-line-icons": "^2.4.1"
+        "simple-line-icons": "^2.4.1",
+        "ssl-express-www": "^2.0.0"
     },
     "devDependencies": {
         "browser-sync": "2.24.3",
