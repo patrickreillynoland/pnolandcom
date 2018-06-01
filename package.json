@@ -1,8 +1,8 @@
 {
-    "title": "Resume",
+    "title": "pnolandcom",
     "name": "startbootstrap-resume",
     "version": "4.1.1",
-    "description": "Resume is a simple, yet elegant resume and CV theme for Bootstrap 4.",
+    "description": "prnoland.com (based on Resume template @ startbootstrap.com",
     "keywords": [
         "css",
         "sass",
@@ -11,25 +11,24 @@
         "theme",
         "template"
     ],
-    "homepage": "https://startbootstrap.com/template-overviews/resume",
+    "homepage": "https://prnoland.com",
     "scripts": {
         "start": "node ./server/index.js"
     },
     "bugs": {
-        "url": "https://github.com/BlackrockDigital/startbootstrap-resume/issues",
-        "email": "feedback@startbootstrap.com"
+        "email": "patrickreillynoland@gmail.com"
     },
     "license": "MIT",
-    "author": "Start Bootstrap",
+    "author": "Patrick Noland",
     "contributors": [
-        "David Miller (http://davidmiller.io/)"
+        "Patrick Noland (prnoland.com)"
     ],
     "repository": {
         "type": "git",
-        "url": "https://github.com/BlackrockDigital/startbootstrap-resume.git"
+        "url": "https://github.com/patrickreillynoland/pnolandcom.git"
     },
     "dependencies": {
-        "bootstrap": "4.1.1",
+        "bootstrap": "^4.1.1",
         "devicons": "^1.8.0",
         "ejs": "^2.6.1",
         "express": "^4.16.3",
