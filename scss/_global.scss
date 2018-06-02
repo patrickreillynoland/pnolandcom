@@ -1,10 +1,5 @@
 // Global styling for this template
 
-a.workexamples-link {
-  display: inline-block;
-  margin: 4px;
-}
-
 body {
   @include body-font;
   padding-top: 54px;
@@ -44,11 +39,15 @@ h2 {
   @include heading-font;
   font-size: 1.35rem;
 }
+
 .workexamples-link {
-  .thumbnail {
-    max-width: 19em;
-    height: auto;
-  }
+  display: inline-block;
+  margin: 4px;
+}
+
+.workexamples-thumb {
+  max-width: 19em;
+  height: auto;
 }
 
 

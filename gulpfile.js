@@ -6,7 +6,7 @@ var rename = require("gulp-rename");
 var uglify = require('gulp-uglify');
 var pkg = require('./package.json');
 var browserSync = require('browser-sync').create();
-var nodemon = require('gulp-nodemon');
+var nodemon = require('gulp-nodemon'); 
 
 // Set the banner content
 var banner = ['/*!\n',
