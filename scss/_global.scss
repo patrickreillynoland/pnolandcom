@@ -40,6 +40,11 @@ h2 {
   font-size: 1.35rem;
 }
 
+.workexamples-body {
+  margin: 5px 0;
+  display: flex;
+}
+
 .workexamples-link {
   display: inline-block;
   margin: 4px;
@@ -48,6 +53,7 @@ h2 {
 .workexamples-thumb {
   max-width: 19em;
   height: auto;
+  border: 1px solid #0a0a0a;
 }
 
 

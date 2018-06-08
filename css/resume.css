@@ -1,5 +1,5 @@
 body {
-  font-family: 'Open Sans', serif;
+  font-family: 'Hind', serif;
   padding-top: 54px;
   color: #868e96;
 }
@@ -17,7 +17,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Saira Extra Condensed', serif;
+  font-family: 'Zilla Slab', sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   color: #343a40;
@@ -35,8 +35,13 @@ h2 {
 .subheading {
   text-transform: uppercase;
   font-weight: 500;
-  font-family: 'Saira Extra Condensed', serif;
+  font-family: 'Zilla Slab', sans-serif;
   font-size: 1.35rem;
+}
+
+.workexamples-body {
+  margin: 5px 0;
+  display: flex;
 }
 
 .workexamples-link {
@@ -47,6 +52,7 @@ h2 {
 .workexamples-thumb {
   max-width: 19em;
   height: auto;
+  border: 1px solid #0a0a0a;
 }
 
 .list-social-icons a {
@@ -54,7 +60,7 @@ h2 {
 }
 
 .list-social-icons a:hover {
-  color: #1f7c34;
+  color: #a8a877;
 }
 
 .list-social-icons a .fa-lg {
@@ -66,7 +72,7 @@ h2 {
 }
 
 .list-icons .list-inline-item i:hover {
-  color: #1f7c34;
+  color: #a8a877;
 }
 
 #sideNav .navbar-nav .nav-item .nav-link {
@@ -141,17 +147,17 @@ section.resume-section .resume-item .resume-date {
 }
 
 .bg-primary {
-  background-color: #1f7c34 !important;
+  background-color: #a8a877 !important;
 }
 
 .text-primary {
-  color: #1f7c34 !important;
+  color: #a8a877 !important;
 }
 
 a {
-  color: #1f7c34;
+  color: #a8a877;
 }
 
 a:hover, a:focus, a:active {
-  color: #103f1a;
+  color: #808052;
 }
