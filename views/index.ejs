@@ -37,7 +37,9 @@
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
       <a class="navbar-brand js-scroll-trigger" href="#page-top">
-        <span class="d-block d-lg-none">Patrick Noland</span>
+        <span class="d-block d-lg-none">
+          <img class="img-fluid" style="max-height: 6vh" src="img/pnlong_262x800.png" alt="Patrick Noland" />
+        </span>
         <span class="d-none d-lg-block">
           <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/profile.jpg" alt="Patrick Noland">
         </span>
@@ -208,40 +210,40 @@
           <div class="subheading mb-3">Programming Languages &amp; Tools</div>
           <ul class="list-inline list-icons">
             <li class="list-inline-item">
-              <i class="devicons devicons-html5"></i>
+              <i class="devicons devicons-html5" title="HTML5"></i>
             </li>
             <li class="list-inline-item">
-              <i class="devicons devicons-css3"></i>
+              <i class="devicons devicons-css3" title="CSS3"></i>
             </li>
             <li class="list-inline-item">
-              <i class="devicons devicons-javascript"></i>
+              <i class="devicons devicons-javascript" title="Javascript"></i>
             </li>
             <li class="list-inline-item">
-              <i class="devicons devicons-jquery"></i>
+              <i class="devicons devicons-jquery" title="jQuery"></i>
             </li>
             <li class="list-inline-item">
-              <i class="devicons devicons-sass"></i>
+              <i class="devicons devicons-sass" title="SASS"></i>
             </li>
             <li class="list-inline-item">
-              <i class="devicons devicons-bootstrap"></i>
+              <i class="devicons devicons-bootstrap" title="Bootstrap"></i>
             </li>
             <li class="list-inline-item">
-              <i class="devicons devicons-wordpress"></i>
+              <i class="devicons devicons-wordpress" title="WordPress"></i>
             </li>
             <li class="list-inline-item">
-              <i class="devicons devicons-git"></i>
+              <i class="devicons devicons-git" title="Git"></i>
             </li>
             <li class="list-inline-item">
-              <i class="devicons devicons-gulp"></i>
+              <i class="devicons devicons-gulp" title="Gulp"></i>
             </li>
             <li class="list-inline-item">
-              <i class="devicons devicons-nodejs"></i>
+              <i class="devicons devicons-nodejs" title="Node.js"></i>
             </li>
             <li class="list-inline-item">
-              <i class="devicons devicons-php"></i>
+              <i class="devicons devicons-php" title="PHP"></i>
             </li>
             <li class="list-inline-item">
-              <i class="devicons devicons-mysql"></i>
+              <i class="devicons devicons-mysql" title="MySQL"></i>
             </li>
           </ul>
 
@@ -263,26 +265,19 @@
         </div>
       </section>
 
-      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="interests">
-        <div class="my-auto">
-          <h2 class="mb-5">Interests</h2>
-          <p>Lorem ipsum baby. This is some placeholder text to make sure the line breaks aren't crazy when I play around with the responsiveness. Alabama Arkansas Colorado Delaware Georgia Illinois Indiana Blah Blah Here's some more placeholder text.</p>
-          <p class="mb-0">Even more placeholder text, I'll be cutting and pasting the text from the other. Lorem ipsum baby. This is some placeholder text to make sure the line breaks aren't crazy when I play around with the responsiveness. Alabama Arkansas Colorado Delaware Georgia Illinois Indiana Blah Blah Here's some more placeholder text.</p>
-        </div>
-      </section>
-
       <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="workexamples">
         <div class="my-auto">
           <h2 class="mb-5">Work Examples</h2>
+
           <a class="workexamples-link" href="#" data-toggle="modal" data-target="#workModal1">
-            <img class="workexamples-thumb" dataclass="img-thumbnail" src="img/coworkersthumb.png" alt="Coworkers">
+            <img class="workexamples-thumb" dataclass="img-thumbnail" src="img/coworkersthumb.png" title="Coworkers">
           </a>
 
           <div class="modal fade" id="workModal1" tabindex="-1" role="dialog" aria-labelledby="workModalLabel" aria-hidden="true">
             <div class="modal-dialog" role="document">
               <div class="modal-content">
                 <div class="modal-header">
-                  <h5 class="modal-title" id="workModalLabel">Coworkers</h5>
+                  <h5 class="modal-title" id="workModalLabel">Coworkers (AngularJS + Node.js)</h5>
                   <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                   </button>
@@ -290,7 +285,18 @@
                 <div class="modal-body">
                   <img src="img/coworkersthumb.png" class="img-fluid" alt="https://coworkers-prn.herokuapp.com/" />
                   <div class="workexamples-body">
-                    <p>Coworkers was my capstone project for Covalence <a href="http://covalence.io" target="_blank">(http://covalence.io)</a>, completed at the end of my full-stack program. The idea was to create a site where users could quickly  </p>
+                    <div class="clearfix workexamples-content">
+                      <p>Coworkers was my capstone project for Covalence <a href="http://covalence.io" target="_blank">(http://covalence.io)</a>, completed at the end of my full-stack program. Frontend is a mix of regular JS and AngularJS, and the backend is running Node.js with Express routing connected to a MySQL database.</p>
+                    </div>
+                    <div class="clearfix">
+                      <ul>
+                        <b>Stack + Tools:</b>
+                        <li>Angular.js</li>
+                        <li>Nodejs</li>
+                        <li>MySQL</li>
+                        <li>Deployed on Heroku</li>
+                      </ul>
+                    </div>
                   </div>
                 </div>
                 <div class="modal-footer">
@@ -310,7 +316,7 @@
             <div class="modal-dialog" role="document">
               <div class="modal-content">
                 <div class="modal-header">
-                  <h5 class="modal-title" id="workModalLabel">Covalence Store</h5>
+                  <h5 class="modal-title" id="workModalLabel">Covalence Store (AngularJS + Node.js)</h5>
                   <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                   </button>
@@ -318,11 +324,23 @@
                 <div class="modal-body">
                   <img src="img/covstore.png" class="img-fluid" alt="https://covstore.herokuapp.com/" />
                   <div class="workexamples-body">
-                    <p>Coworkers was my capstone project for Covalence <a href="http://covalence.io" target="_blank">(http://covalence.io)</a>, completed at the end of my full-stack program. The idea was to create a site where users could quickly  </p>
+                    <div class="workexamples-content">
+                      <p>The Covalence Store website was my first group project for <a href="https://covalence.io">Covalence.io</a>. We were given images and a mockup but had to build the site from the ground up. The site is no longer live but please feel free to check it out on Github.</p>
+                    </div>
                   </div>
+                  <div class="clearfix workexamples-content">
+                      <ul>
+                        <b>Stack + Tools:</b>
+                        <li>Angular.js</li>
+                        <li>Nodejs</li>
+                        <li>MySQL</li>
+                        <li>AWS</li>
+                        <li>Stripe for payment processing</li>
+                        <li>Sendgrid API for emails</li>
+                      </ul>
+                    </div>
                 </div>
                 <div class="modal-footer">
-                  <a href="https://covstore.herokuapp.com/" target="_blank" role="button" class="btn btn-primary">Go to Site</a>
                   <a href="https://github.com/patrickreillynoland/Covalence-Store" target="_blank" role="button" class="btn btn-primary">Github</a>
                   <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                 </div>
@@ -331,31 +349,43 @@
           </div>
 
           <a class="workexamples-link" href="#" data-toggle="modal" data-target="#workModal3">
-            <img class="workexamples-thumb" dataclass="img-thumbnail" src="img/uedthumb.jpg" alt="Unifi-Ed">
+            <img class="workexamples-thumb" dataclass="img-thumbnail" src="img/pnolandcomthumb.jpg" alt="PRNoland.com">
           </a>
-
-          <div class="modal fade" id="workModal3" tabindex="-1" role="dialog" aria-labelledby="workModalLabel" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title" id="workModalLabel">Unifi-Ed (WordPress)</h5>
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                  </button>
-                </div>
-                <div class="modal-body">
-                  <img src="img/uedthumb.jpg" class="img-fluid" alt="http://unifi-ed.org" />
-                  <div class="workexamples-body">
-                    <p>Unifi-Ed is a  </p>
+  
+            <div class="modal fade" id="workModal3" tabindex="-1" role="dialog" aria-labelledby="workModalLabel" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="workModalLabel">PRNoland.com (JS + Bootstrap + Node.js)</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
                   </div>
-                </div>
-                <div class="modal-footer">
-                  <a href="https://coworkers-prn.herokuapp.com/" target="_blank" role="button" class="btn btn-primary">Go to Site</a>
-                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  <div class="modal-body">
+                    <img src="img/pnolandcomthumb.jpg" class="img-fluid" alt="prnoland.com" />
+                    <div class="workexamples-body">
+                      <div class="workexamples-content">
+                        <p>I just wanted to explain a little bit about this site! The front-end functions are powered by JS with a little EJS to handle views and jQuery to handle scroll animations, and a basic Node server to power the backend. I also used Sass to handle CSS preprocessing and Gulp as a taskrunner. It's a bit much for now but I have some plans to scale.</p>
+                      </div>
+                    </div>
+                    <div class="clearfix">
+                        <ul>
+                          <b>Stack + Tools:</b>
+                          <li>JS</li>
+                          <li>jQuery</li>
+                          <li>Node.js</li>
+                          <li>Sass</li>
+                          <li>Gulp</li>
+                        </ul>
+                      </div>
+                  </div>
+                  <div class="modal-footer">
+                      <a href="https://github.com/patrickreillynoland/pnolandcom" target="_blank" role="button" class="btn btn-primary">Github</a>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
 
           <a class="workexamples-link" href="#" data-toggle="modal" data-target="#workModal4">
             <img class="workexamples-thumb" dataclass="img-thumbnail" src="img/dennisclarkthumb.jpg" alt="Dennis Clark for Representative">
@@ -373,8 +403,18 @@
                 <div class="modal-body">
                   <img src="img/dennisclarkthumb.jpg" class="img-fluid" alt="http://dennisclark.org" />
                   <div class="workexamples-body">
-                    <p>Dennis Clark</p>
+                    <div class="workexamples-content">
+                      <p>This was a fundraising site built for Dennis Clark, a State Representative candidate from Tennessee.</p>
+                    </div>
                   </div>
+                  <div class="clearfix">
+                      <ul>
+                        <b>Stack + Tools:</b>
+                        <li>WordPress</li>
+                        <li>CSS3</li>
+                        <li>PHP</li>
+                      </ul>
+                    </div>
                 </div>
                 <div class="modal-footer">
                   <a href="http://dennisclark.org" target="_blank" role="button" class="btn btn-primary">Go to Site</a>
@@ -384,6 +424,83 @@
             </div>
           </div>
           
+          <a class="workexamples-link" href="#" data-toggle="modal" data-target="#workModal5">
+            <img class="workexamples-thumb" dataclass="img-thumbnail" src="img/whschattthumb.jpg" alt="Women's Health Services of Chattanooga">
+          </a>
+  
+          <div class="modal fade" id="workModal5" tabindex="-1" role="dialog" aria-labelledby="workModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="workModalLabel">Women's Health Services (WordPress)</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <img src="img/whschattthumb.jpg" class="img-fluid" alt="http://whschattanooga.com" />
+                  <div class="workexamples-body">
+                    <div class="workexamples-content">
+                      <div class="workexamples-content">
+                        <p>Women's Health Services is a healthcare network serving female patients of all ages around the Hamilton County area.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="clearfix">
+                      <ul>
+                        <b>Stack + Tools:</b>
+                        <li>WordPress</li>
+                        <li>CSS3</li>
+                        <li>PHP</li>
+                      </ul>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                  <a href="http://whschattanooga.com" target="_blank" role="button" class="btn btn-primary">Go to Site</a>
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <a class="workexamples-link" href="#" data-toggle="modal" data-target="#workModal6">
+            <img class="workexamples-thumb" dataclass="img-thumbnail" src="img/uedthumb.jpg" alt="Unifi-Ed">
+          </a>
+
+          <div class="modal fade" id="workModal6" tabindex="-1" role="dialog" aria-labelledby="workModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="workModalLabel">Unifi-Ed (WordPress)</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <img src="img/uedthumb.jpg" class="img-fluid" alt="http://unifi-ed.org" />
+                  <div class="workexamples-body">
+                    <div class="workexamples-content">
+                      <p>Unifi-Ed is a education nonprofit based in Chattanooga, TN. I built their initial site using a popular WordPress theme (Amax), and used Gravity Forms and a custom PHP backend to manage information gathered from users. </p>
+                    </div>
+                  </div>
+                  <div class="clearfix">
+                      <ul>
+                        <b>Stack + Tools:</b>
+                        <li>WordPress</li>
+                        <li>CSS3</li>
+                        <li>PHP</li>
+                        <li>Gravity Forms</li>
+                        <li>Gravity PDF</li>
+                      </ul>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                  <a href="http://unifi-ed.org/" target="_blank" role="button" class="btn btn-primary">Go to Site</a>
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
