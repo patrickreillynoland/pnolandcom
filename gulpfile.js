@@ -8,15 +8,6 @@ var pkg = require('./package.json');
 var browserSync = require('browser-sync').create();
 var nodemon = require('gulp-nodemon'); 
 
-// Set the banner content
-var banner = ['/*!\n',
-  ' * Start Bootstrap - <%= pkg.title %> v<%= pkg.version %> (<%= pkg.homepage %>)\n',
-  ' * Copyright 2013-' + (new Date()).getFullYear(), ' <%= pkg.author %>\n',
-  ' * Licensed under <%= pkg.license %> (https://github.com/BlackrockDigital/<%= pkg.name %>/blob/master/LICENSE)\n',
-  ' */\n',
-  ''
-].join('');
-
 // Copy third party libraries from /node_modules into /vendor
 gulp.task('vendor', function() {
 
@@ -74,6 +65,18 @@ gulp.task('vendor', function() {
     ])
     .pipe(gulp.dest('./vendor/simple-line-icons/css'))
 
+});
+
+// Watch for SCSS Changes
+
+gulp.task('sass', function () {
+  return gulp.src('./sass/**/*.scss')
+    .pipe(sass().on('error', sass.logError))
+    .pipe(gulp.dest('./css'));
+});
+
+gulp.task('sass:watch', function () {
+  gulp.watch('./sass/**/*.scss', ['sass']);
 });
 
 // Compile SCSS
