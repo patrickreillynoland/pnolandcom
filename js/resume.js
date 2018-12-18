@@ -29,6 +29,10 @@
   $("#pop").on("click", function() {
     $('#imagepreview').attr('src', $('#imageresource').attr('src')); 
     $('#imagemodal').modal('show');
-    
+  
+  // Globally enables tooltips
+  $(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+  })
  });
 })(jQuery); // End of use strict
